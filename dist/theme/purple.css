@@ -4,7 +4,8 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-/* 191919*/
+/* deep purple */
+/* hot pink */
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -12,7 +13,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #800080;
+  --background-color: #1a1626;
   --main-font: Source Sans Pro, Helvetica, sans-serif;
   --main-font-size: 42px;
   --main-color: #fff;
@@ -31,14 +32,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --heading3-size: 1.3em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #42affa;
-  --link-color-hover: #8dcffc;
-  --selection-background-color: #bee4fd;
+  --link-color: #d53f8c;
+  --link-color-hover: #e37eb2;
+  --selection-background-color: #eca8cb;
   --selection-color: #fff; }
 
 .reveal-viewport {
-  background: #800080;
-  background-color: #800080; }
+  background: #1a1626;
+  background-color: #1a1626; }
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -48,12 +49,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal ::selection {
   color: #fff;
-  background: #bee4fd;
+  background: #eca8cb;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: #bee4fd;
+  background: #eca8cb;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -247,18 +248,18 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
+  color: #d53f8c;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #8dcffc;
+  color: #e37eb2;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #068de9; }
+  background: #a42465; }
 
 /*********************************************
  * Frame helper
@@ -271,25 +272,25 @@ section.has-light-background, section.has-light-background h1, section.has-light
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #42affa;
+  border-color: #d53f8c;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #42affa; }
+  color: #d53f8c; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #42affa; }
+  color: #d53f8c; }
 
 /*********************************************
  * PRINT BACKGROUND
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #800080; } }
+    background-color: #1a1626; } }

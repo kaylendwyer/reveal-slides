@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Metadata for DH - Lagos Summer School</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/purple.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -16,8 +16,344 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section>
+					<h1>Metadata for Digital Humanities</h1>
+					<p>Kaylen Dwyer, MLIS
+						<br>Digital Media Specialist
+						<br>The Institute for Digital Research In the Humanities - University of Kansas 
+						<br><a href="mailto:kaylendwyer@ku.edu">kaylendwyer@ku.edu</a>
+					</p>
+					
+					<aside class="notes">CC: Hi, my name is Kaylen Dwyer and I am from the Institute for Digital Research in the Humanities at the University of Kansas. Thank you so much for having me here today to introduce you to metadata. We’ll cover what it is, why you need it, some of its uses in the digital humanities, and walk through a little bit of practice with how to create a metadata record. </aside>
+				</section>
+	
+				<section>
+					<h2>"Data about data."</h2>
+				"Perhaps a more useful, “big picture” way of thinking about metadata is as the sum total of what one can say at a given moment about any information object at any level of aggregation." <br>-- Anne Gilliland <br>"Setting the Stage" in <em><a href="https://www.getty.edu/publications/intrometadata/setting-the-stage/">Introduction to Metadata</a></em>
+					<aside class="notes">
+						CC: 
+						So what is metadata?
+
+Even if you’ve never heard of the term, you create and use metadata every day.
+One favorite definition of the term says, somewhat obscurely, that metadata is “data about data.” Metadata provides a summary of basic information about data in order to make that data easier to find and work with. 
+						
+Anne Gilliland, in Introduction to Metadata, says it is the “sum total of what one can say at a given moment about any information object at any level of aggregation.”
+</aside>
+					
+				</section>
+				
+				<section>
+					<img src="graphics/metadatabird.png" alt="bird in the snow with metadata documenting the title, creator, filetype, application used to take the photo, and geolocation" width="100%"/>
+					<aside class="notes">CC: 
+						
+						Let’s look at this picture of a robin, which has just a little bit of metadata. It has a filename, a creator (my husband!), a date, an application (the camera we shot it with), a format (JPG), and then geolocation (the map). 
+						
+One thing these definitions leave out is what makes metadata more than just a description of an object. In the metadata for the Robin, notice that it has a structure. The information is chunked into distinct units so that it can be manipulated at each level. 
+</aside>
+				</section>
+				
+				<section>
+				<h2>The features of an information object</h2>
+					<ol>
+						<li>Content</li>
+						<li>Context</li>
+						<li>Structure</li>
+					</ol>
+					<aside class="notes">CC: 
+						
+						Anne Gilliland identifies three main features of information objects for which we want to create metadata—content, context, and structure.
+						
+						* Content relates to what the object contains or is about and is intrinsic to an information object.
+
+						* Context indicates the who, what, why, where, and how aspects associated with the object’s creation and subsequent life and is extrinsic to an information object.
+
+						* Structure relates to the formal set of associations within or among individual information objects and can be intrinsic, extrinsic, or both.
+</aside>
+				
+				</section>
+				
+				<section>
+				
+					<section><h2>Functions of metadata</h2>
+					Example: <a href="https://finds.org.uk/database/artefacts/record/id/1027423">Portable Antiquities Scheme</a>
+					</section>
+					<section>
+					<h2>Functions of metadata</h2>
+					<ol>
+						<li>Access (search, discovery, retrieval) </li>
+						<li>Context (descriptive information)</li>
+						<li>Documentation of Ownership & Authenticity</li>
+						<li>Preservation</li>
+						<li>Interoperability</li>
+
+					</ol>
+					<br>
+					<aside class="notes">Many of these things intersect.</aside>
+					</section>
+					
+					
+				</section>
+				
+				<section>
+					<section><h2>Metadata in the Digital Humanities</h2><aside class="notes">I’m just going to show three examples of metadata in the digital humanities. Many DH projects are archiving projects. Maybe you’re digitizing an existing collection of books or photographs, creating a new collection, documenting oral histories</aside></section>
+					<section>
+						<a href="https://marathon.library.northeastern.edu">Digital Archive: Our Marathon</a>
+					<aside class="notes">Our Marathon documents temporary memorials erected after the bombing at the Boston Marathon in 2013. This is one poster from the memorial. It has been given a full description—a descriptive title, “Boston Strong, I’m Boston’ poster left at Copley Square Memorial,” A language, a genre (posters), an abstract, key words, and a permanent URL. No matter what happens to this website or where it is moved, this metadata and that URL will lead you back to this item. </aside>
+					</section>
+					<section>
+						<a href="http://www.blakearchive.org/">Digital Editions: Blake Archive</a>
+						<aside class="notes">Another type of project with metadata is a Digital Edition. The William Blake Archive creates digital editions of original works by William Blake. The edition is really working with two objects—the physical original and the digital facsimile that we see on the screen and the electronic edition information. The archive creates metadata for both and separates these. When you create a digital archive, you are creating a new manifestation of an item. Both the physical and the digital need to be attended to in your metadata.  </aside></section>
+					<section>
+						<a href="http://www.mappingpaintings.org/">Visualization: Mapping Paintings</a>
+						<aside class="notes">The third I want to share is just to look at how metadata can be used to create visualizations and maps. In “Mapping Paintings,” they are using metadata on provenance or ownership combined with coordinates and timestamps to create a map... It’s a work in progress.</aside></section>
+				</section>
+				
+				
+				<section>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Card_from_card_catalog.jpg/1920px-Card_from_card_catalog.jpg" alt="card catalog record" width="100%"/>
+					<a href="https://commons.wikimedia.org/wiki/File:Card_from_card_catalog.jpg">Card from the catalog</a>
+					<aside class="notes">Metadata isn't new.
+						
+					For as long as we have organized information, we have been creating metadata—documenting, describing, identifying, cataloging, classifying, and indexing. It’s the way we interact with metadata that has changed, as it becomes increasingly digital and a central part of designing information systems. 
+Metadata also doesn’t have to be digital. The card catalog is a good example.
+						
+Each index card represents one object. Prior to the card catalog, you just had a list. But with the card you can easily manipulate it—add or remove records, rearrange them, search the catalog, pull the records out and compare. 
+						
+And the cards have one single agreed-upon system for documenting information about an object—the title/author/call number are always going to be in the same place. It has standards. 
+					</aside>
+				</section>
+				<section>
+					<table>
+						<thead>
+							<tr>
+								<td>Title</td>
+								<td>Author</td>
+								<td>Date</td>
+								<td>Subject</td>
+								<td>Call no.</td>
+								<td>Pages</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><em>Debates in the Digital Humanities</em></td>
+								<td>Gold, Matthew K. (ed.)</td>
+								<td>2016</td>
+								<td>Humanities -- Technological innovations. Digital media.</td>
+								<td>AZ182 .D44 2016</td>
+								<td>579</td>
+							</tr>
+							<tr>
+								<td><em>Metadata</em></td>
+								<td>Jeffrey Pomerantz</td>
+								<td>2015</td>
+								<td>Information organization. Metadata.</td>
+								<td>Z666.7 .P66 2015</td>
+								<td>239</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">The modern approach to metadata is databases. So in a dataset, it’s like a spreadsheet. Imagine that each row is a record for a single object. Each column is a single characteristic of those objects. What would those headers be? Looking at the card catalog as an example, those would be Title, Author, Call number, number of pages. This is essentially how a library catalog looks and also how resources are managed across digital platforms.</aside>
+				</section>
+			
+			
+				<section data-auto-animate>
+					<h2 data-id="code-title">A look at XML</h2>
+					<pre data-id="code-animation">
+					<code class="hljs"><script type="text/template"><dc:title>The way to make friends with girls</dc:title></script></code>
+					</pre>
+					<aside class="notes">I want to take a quick look at XML (extensible markup language) which is a set of rules for encoding documents in a format that is readable by both humans and machines. Metadata uses XML markup to make your descriptive text machine readable. Many DH projects use an existing platform, so there’s an interface between us and the code. But this is what’s happening behind the scenes.
+
+This is an element that defines the title. The tag is the element. Let’s expand to a whole record. We have a set of elements, each of them defined by an element.
+</aside>
+				</section>
+					<section data-auto-animate>
+					<h2 data-id="code-title">A look at XML</h2>
+				<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers><script type="text/template">
+<dc:creator>Madumere, Adele</dc:creator>
+<dc:title>The way to make friends with girls</dc:title>
+<dc:description>The strong feminist overtones of this fictional account suggest that the author, Adele Madumere, is a woman. Lizzy, the main character of this long story, is a strong and independent woman who continuously questions men and their intentions. In the pamphlet's opening paragraph Lizzy asks, "why are some men fond of interrupting women on high ways,?" (pg.6).</dc:description>
+<dc:date>196-</dc:date>
+<dc:type>Onitsha market literature</dc:type>
+<dc:source>University of Kansas Libraries</dc:source>
+<dc:identifier>ksrl.c3551</dc:identifier>
+<dc:identifier>https://exhibits.lib.ku.edu/items/show/6868</dc:identifier>
+<dc:language>en</dc:language>
+<dc:publisher>Onitsha, Nigeria, A. Onwudiwe & Sons</dc:publisher>
+<dc:rights>This Item is protected by copyright and/or related rights. However, for this Item, either (a) no rights-holder(s) have been identified or (b) one or more rights-holder(s) have been identified but none have been located. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use.
+http://rightsstatements.org/vocab/InC-RUU/1.0/</dc:rights>
+<dc:subject>Nigerian Literature (English)</dc:subject>
+<dc:language>English</dc:language></script>
+	</code></pre>
+				</section>
+				
+				
+				
+				
+				<section><h2>Metadata Standards</h2></section>
+				
+				<section>
+					<section><h2>Metadata Schemas</h2>
+						A metadata schema is a labeling, tagging or coding system used for recording cataloging information or structuring descriptive records. A metadata schema establishes and defines data elements and the rules governing the use of data elements to describe a resource. (Moving Image Collections, 2007).
+						
+						<aside class="notes">I want to take a look at some metadata standards. Metadata, like the card catalog, are only really functional because we have agreed upon standards—each record represents an item, these certain things will be described, and they will be described in this order. 
+							
+A metadata schema is a labeling, tagging or coding system used for recording cataloging information or structuring descriptive records. A metadata schema establishes and defines data elements and the rules governing the use of data elements to describe a resource.
+							
+There are many different schemas. I like to think of them like our bibliographic citation standards. When citing sources in an article we agree to use either MLA, Chicago, or APA and agree to those rules. 
+</aside>
+					
+					</section>
+					<section><h2>Metadata Schemas</h2>
+						Common schemas used for digital humanities projects:
+						<ol>
+							<li>Dublin Core</li>
+							<li>Categories for the Description of Works of Art (CDWA)</li>
+							<li>Visual Resource Association (VRA)</li>
+						</ol>
+					<aside class="notes">Some common schemas for DH projects are:
+1.	Dublin Core
+2.	Categories for the Description of Works of Art (CDWA)
+3.	And the Visual Resource Association (VRA)
+Dublin Core is meant to be simple, flexible, and adaptable.
+CDWA is designed to describe art and cultural heritage objects. 
+And VRA is designed for visual resources like art, photography, or performances.
+So a metadata schema is the structure you agree to use for describing an object. 
+</aside>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Controlled Vocabularies</h2>
+						Controlled vocabularies are standardized words and phrases used to index content for consistent and accurate metadata. These can include term lists, authority files, and thesauri.
+						<aside class="notes">Within the structure of your metadata, there is a second concept of having controlled vocabularies.
+Controlled vocabularies are standardized words and phrases used to index content for consistent and accurate metadata. These can include term lists, subject headings, authority files, and thesauri.
+							
+A controlled vocabulary is helpful to establish consistency across a project, so when people search for a term, they get all the relevant results. 
+							
+Sometimes you have multiple terms to describe one thing. For instance, if you try to google “mobile phone,” likely also want records for “cell phone” and possibly “smart phone.” Sometimes you have one term to describe multiple things and need a way to separate them. Possibly people who share the same name. 
+</aside>
+					</section>
+					
+					<section><h2>Bias in Metadata</h2>
+					<ol>
+						<li>Strict linguistic control</li>
+						<li>Universalist</li>
+						<li>Erases vulnerable communities</li>
+						<li>Harmful and racist descriptions</li>
+						</ol>
+						<aside class="notes">As much as these metadata standards help us, it immediately presents critical problems. By whom and for whom is this language? It universalizes the language we use.
+							
+As much as metadata has the ability to make items visible and accessible, it also has the ability to hide and suppress by failing to recognize diversity within collections and users. 
+
+In the United States one of our primary metadata standards is the Library of Congress Subject Headings which define resources by topic. But these subject headings, in their attempt to classify and generalize, fail when it comes to social groups and identities that lack social and political power. 
+							
+The critical cataloging movement has attempted to address the issues in our metadata. One issue is that many of our terms our racist. A term that has received specific attention is “illegal aliens.” Librarians have agreed that it is not appropriate to continue describing resources with this term and instead have selected “undocumented immigrants.” But with thousands of historical records, the process of untangling the racist history of our metadata standards is challenging. Some have gone back and manually edited the past records… But what is recommended, instead, is to add the new term in the visual display, but keep the alternatives in the back-end. So if you search for “illegal aliens,” these historical documents will still turn up in your search results, but when you see them on the screen, you might only see the subject heading “undocumented immigrant.” 
+
+Another issue we face is that we face is that we lack terms to describe people groups or we attempt to apply labels that are too general or not appropriate to them. One project called the Homosaurus created a vocabulary for LGBTQ as a companion to the Library of Congress Subject Headings to provide more granular description. 
+							
+So we can identify harmful and biased histories embedded in the metadata of our libraries and archives and in creating our digital projects, we are empowered give new language instead of reproducing harm. We don’t have to use existing vocabularies in a prescriptive way, but we can use them as a starting point on which to build, as a model for our own vocabulary, or start building our own vocabulary from scratch. 
+</aside>
+					</section>
+					<section><h2>Metadata Resources</h2>
+					Critical metadata:<br>
+					<ol>
+					<li><a href="https://alair.ala.org/bitstream/handle/11213/14582/SAC20-AC_report_SAC-Working-Group-on-Alternatives-to-LCSH-Illegal-aliens.pdf?sequence=1&isAllowed=y">Report of the SAC Working Group on Alternatives to LCSH “Illegal Aliens”</a></li>
+						<li>Drabinski, Emily. “Queering the Catalog: Queer Theory and the Politics of Correction.” The Library Quarterly: Information, Community, Policy 83, no. 2 (2013): 94-111. doi:10.1086/669547</li>
+						<li><a href="http://critlib.org/critcat/">CritCat</a></li>
+					</ol>
+					</section>
+					<section>
+					Metadata thesauri:<br>
+					<ol>
+					<li><a href="https://bartoc.org/">Bartoc</a></li>
+						<li><a href="http://homosaurus.org/">Homosaurus</a></li>
+						<li><a href="https://www.getty.edu/research/tools/vocabularies/">Getty Vocabularies</a></li>
+					</ol>
+					</section>
+				</section>
+				
+				<section>
+					<h2><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title">Dublin Core Elements</a></h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>Rights</td>
+								<td>Contributor</td>
+								<td>Creator</td>
+							</tr>
+							<tr>
+								<td>Subject</td>
+								<td>Coverage</td>
+								<td>Title</td>
+							</tr>
+							<tr>
+								<td>Publisher</td>
+								<td>Identifier</td>
+								<td>Description</td>
+							</tr>
+							<tr>
+								<td>Type</td>
+								<td>Date</td>
+								<td>Source</td>
+							</tr>
+							<tr>
+								<td>Relation</td>
+								<td>Format</td>
+								<td>Language</td>
+							</tr>
+						</tbody>
+					</table>
+					<aside class="notes">There's always a blance to metadata which is its ease of use and its completeness. Dublin Core is a pretty good balance of these, so it is used fairly frequently. There are more elements to extend dublin core and describe in more detail, but this is the essential set. I find that sometimes in its simplicity, dublin core can trip people up. Even with the structure and standards of metadata, I think of metadata as a creative act. You will make many critical choices of your own along the way. We'll walk through making a record together. </aside>
+				</section>
+				
+				
+				<section>
+					
+					<section>
+				<h2>Making a dublin core metadata record</h2>
+		
+				</section>
+				<section>
+					<h2>Title</h2>
+				<img src="graphics/DcTitle.png" width="100%" alt="dublin core title property"/>
+				</section>
+				<section>
+					<h2>Creator vs. Contributor</h2>
+					Creator: An entity primarily responsible for making the resource.<br>
+					
+					Contributor: An entity responsible for making contributions to the resource.
+				</section>
+					<section><h2>Coverage vs. Date</h2>
+						The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.<br>
+						
+						Examples: Place/location with a name or geographic coordinates. Period, date, or date range. 
+				
+					</section>
+					<section><h2>Format</h2>
+					The file format, physical medium, or dimensions of the resource.<br>
+						Examples: Size or duration. 
+					</section>
+					<section><h2>Type</h2>
+					The nature or genre of the resource.<br>
+						Comments: Recommended to use a controlled vocabulary. (From Dublin Core: collection, event, image, physical object, sound, text, place, etc.)
+					</section>
+					<section><h2>Source vs. Identifier</h2>
+					Source: A related resource from which the described resource is derived. <br>
+						
+						Identifier: An unambiguous reference to the resource within a given context.
+					
+					</section>
+				</section>
+				<section>
+				<h2>Metadata for DH</h2>
+					<li>Make your projects accessible & discoverable</li>
+					<li>Provide context and description</li>
+					<li>Document provenance and authenticity</li>
+					<li>Preserve the work you are doing</li>
+				</section>
 			</div>
 		</div>
 
